@@ -20,20 +20,6 @@ This repository contains the processed data and Python scripts accompanying the 
 
 > Anwar, I. P., Herho, S. H. S., Khadami, F., Putri, M. R., & Syahrial, S. C. (2026). Towards statistical modeling of chlorophyll-a concentrations in Balikpapan Bay, Indonesia: Implications for algal bloom detection. *Environmental Research Communications*. https://doi.org/10.1088/2515-7620/ae4680
 
-## Repository Structure
-
-```
-.
-├── data/
-│   └── data.csv                  # Daily multivariate oceanographic dataset (2019-2021)
-├── script/
-│   ├── study_area_map.py         # Study area map generation (Figure 1)
-│   ├── eda.py                    # Exploratory data analysis (Figures 2-5)
-│   ├── autogluon_ml.py           # AutoGluon ensemble regression (Tables 1-2)
-│   └── extreme_value_analysis.py # Block maxima extreme value analysis (Figures 6-7)
-├── LICENSE
-└── README.md
-```
 
 ## Data
 
