@@ -1,0 +1,67 @@
+============================================================
+Extreme Value Analysis Report
+Generated : 2026-02-21 11:52:03
+============================================================
+
+--- Model Configuration ---
+  Block size   : 14D
+  MCMC walkers : 500
+  MCMC samples : 2500
+
+--- Fitted Model Summary ---
+                           Univariate Extreme Value Analysis                            
+========================================================================================
+                                      Source Data                                       
+----------------------------------------------------------------------------------------
+Data label:                 Chlorophyll_a      Size:                               1,096
+Start:                       January 2019      End:                        December 2021
+========================================================================================
+                                     Extreme Values                                     
+----------------------------------------------------------------------------------------
+Count:                                 79      Extraction method:                     BM
+Type:                                high      Block size:              14 days 00:00:00
+========================================================================================
+                                         Model                                          
+----------------------------------------------------------------------------------------
+Model:                              Emcee      Distribution:                    gumbel_r
+Walkers:                              500      Samples per walker:                 2,500
+Log-likelihood:                  -141.644      AIC:                              287.446
+----------------------------------------------------------------------------------------
+Free parameters:                loc=2.930      Fixed parameters: All parameters are free
+                              scale=1.229                                               
+========================================================================================
+
+--- Return-Period Summary Table (95% CI) ---
+               return value   lower ci   upper ci
+return period                                    
+1.0                6.913896   6.242487   7.949866
+2.0                7.777693   6.995909   9.001988
+5.0                8.910766   7.982332  10.384685
+10.0               9.764864   8.724326  11.427362
+25.0              10.892209   9.702083  12.806185
+50.0              11.744412  10.441237  13.849702
+100.0             12.596379  11.180134  14.892624
+250.0             13.722449  12.155707  16.271941
+500.0             14.574227  12.892905  17.313980
+1000.0            15.425983  13.630473  18.357038
+
+--- Top 5 Extreme Events by Return Period ---
+            Chlorophyll_a  exceedance probability  return period
+Date                                                            
+2020-06-16          11.27                  0.0125      80.000000
+2019-11-09          10.43                  0.0250      40.000000
+2020-01-27           6.71                  0.0375      26.666667
+2019-08-13           6.48                  0.0500      20.000000
+2020-06-01           6.21                  0.0625      16.000000
+
+--- Interpretation ---
+The GEV distribution was fitted via Bayesian MCMC (Emcee)
+to 14-day block maxima of chlorophyll-a concentration.
+Return periods quantify the expected recurrence interval
+of extreme HAB-like events. Longer return periods correspond
+to rarer, more intense bloom events.
+
+Diagnostic plots (fig4.png) show return-level curve with 95%
+confidence envelope, the fitted PDF, and Q-Q / P-P plots
+for goodness-of-fit assessment.
+============================================================
