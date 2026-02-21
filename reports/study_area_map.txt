@@ -1,0 +1,20 @@
+============================================================
+Study Area Map Report
+Generated : 2026-02-21 09:20:00
+============================================================
+
+Region bounding box (WESN):
+  West  : 92 deg E
+  East  : 170 deg E
+  South : -20 deg N
+  North : 20 deg N
+
+Relief data resolution : SRTM15+ (15s)
+
+Station marker coordinates:
+  Longitude : 116.708611 deg E
+  Latitude  : -0.973056 deg N
+
+Output figure : ../figs/fig1.png
+Output DPI    : 400
+============================================================

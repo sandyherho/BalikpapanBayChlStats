@@ -1,0 +1,91 @@
+============================================================
+Exploratory Data Analysis Report
+Generated : 2026-02-21 09:27:37
+============================================================
+
+--- Dataset Overview ---
+<class 'pandas.core.frame.DataFrame'>
+DatetimeIndex: 1096 entries, 2019-01-01 to 2021-12-31
+Data columns (total 10 columns):
+ #   Column                 Non-Null Count  Dtype  
+---  ------                 --------------  -----  
+ 0   Chlorophyll_a          1096 non-null   float64
+ 1   Nitrate                1096 non-null   float64
+ 2   Phosphate              1096 non-null   float64
+ 3   Silicate               1096 non-null   float64
+ 4   Dissolved_Oxygen       1096 non-null   float64
+ 5   Total_River_Discharge  1096 non-null   float64
+ 6   Rainfall               1096 non-null   float64
+ 7   Temperature            1096 non-null   float64
+ 8   Salinity               1096 non-null   float64
+ 9   Solar_Radiation        1096 non-null   float64
+dtypes: float64(10)
+memory usage: 94.2 KB
+
+--- Descriptive Statistics (all variables) ---
+       Chlorophyll_a      Nitrate    Phosphate     Silicate  Dissolved_Oxygen  Total_River_Discharge     Rainfall  Temperature     Salinity  Solar_Radiation
+count    1096.000000  1096.000000  1096.000000  1096.000000       1096.000000            1096.000000  1096.000000  1096.000000  1096.000000      1096.000000
+mean        1.756898     0.507450     0.020163    12.016882        204.868132             214.299935     8.576825    29.224334    29.704912    904887.903080
+std         1.099418     0.737098     0.022469     8.835000          6.014129             130.865359    18.006769     0.407383     1.932245     51704.207406
+min         0.350000     0.007469     0.000189     3.495606        195.911545              25.523077     0.000000    28.068792    24.125290    791669.209042
+25%         1.000000     0.026940     0.003154     5.038887        201.106545             130.273978     0.000000    28.923787    28.331379    863638.197170
+50%         1.510000     0.137631     0.008718     8.452248        202.189230             204.428358     0.500000    29.205180    29.363654    920064.928852
+75%         2.180000     0.700852     0.039026    16.152503        207.026505             273.379201     8.625000    29.505039    31.190086    942918.167581
+max        11.270000     3.348402     0.081026    40.316134        229.375118            1085.107542   165.800000    31.243146    33.469122    989435.302300
+
+--- First 5 Rows ---
+            Chlorophyll_a   Nitrate  Phosphate  Silicate  Dissolved_Oxygen  Total_River_Discharge  Rainfall  Temperature   Salinity  Solar_Radiation
+Date                                                                                                                                                
+2019-01-01           1.39  0.388450   0.001513  9.791618        201.420494              92.373733       0.0    31.243146  33.284887    911591.914555
+2019-01-02           1.90  0.235056   0.001080  8.510964        201.230118             151.474331      12.8    30.575972  32.932942    906093.044279
+2019-01-03           1.89  0.188044   0.001179  8.200518        201.149078             167.575625       1.5    29.944068  32.838706    920798.718838
+2019-01-04           1.68  0.155607   0.001050  8.054524        201.072983             141.435395      54.0    29.590075  32.599721    923606.522162
+2019-01-05           1.39  0.154504   0.001147  8.111265        201.004051             115.256126       0.3    29.550193  32.574962    924662.157435
+
+--- Chlorophyll-a Series ---
+  Count  : 1096
+  Mean   : 1.7569 mg/m^3
+  Std    : 1.0994 mg/m^3
+  Min    : 0.3500 mg/m^3
+  Max    : 11.2700 mg/m^3
+  Median : 1.5100 mg/m^3
+
+--- Potential HAB Events (top 2 Chl-a concentrations) ---
+  11.2700 mg/m^3 on 2020-06-16
+  10.4300 mg/m^3 on 2019-11-09
+
+--- Seasonal Cycle (monthly mean Chl-a) ---
+  Jan : 1.7582 mg/m^3
+  Feb : 1.8707 mg/m^3
+  Mar : 1.8789 mg/m^3
+  Apr : 1.8724 mg/m^3
+  May : 2.1138 mg/m^3
+  Jun : 2.0162 mg/m^3
+  Jul : 1.3430 mg/m^3
+  Aug : 1.4744 mg/m^3
+  Sep : 1.6466 mg/m^3
+  Oct : 1.6903 mg/m^3
+  Nov : 1.7078 mg/m^3
+  Dec : 1.7294 mg/m^3
+  Minimum month : Jul (1.3430)
+  Maximum month : May (2.1138)
+
+--- Skewness & Kurtosis ---
+  Skewness         : 2.2117
+  Excess kurtosis  : 10.1605
+  Interpretation   : Distribution is skewed to the right (positive).
+  Kurtosis interp. : Leptokurtic (heavier tails than normal).
+
+--- Normality Tests ---
+  Shapiro-Wilk: statistic=0.8398, p-value=0.0000
+    -> Data is not normally distributed.
+  D'Agostino K^2: statistic=574.1887, p-value=0.0000
+    -> Data is not normally distributed.
+
+--- Stationarity Tests ---
+  ADF: statistic=-19.2263, p-value=0.0000
+    -> Series is stationary.
+  KPSS: statistic=0.2979, p-value=0.1000
+    -> Series is stationary.
+
+============================================================

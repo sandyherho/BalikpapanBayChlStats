@@ -1,0 +1,54 @@
+============================================================
+AutoGluon Multivariate Regression Report
+Generated : 2026-02-21 10:04:01
+============================================================
+
+--- Dataset Split ---
+  Total samples   : 1096
+  Training samples: 877 (80%)
+  Test samples    : 219 (20%)
+  Random state    : 128
+  Target variable : Chlorophyll_a
+
+--- Model Leaderboard ---
+              model  score_val             eval_metric  pred_time_val   fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+WeightedEnsemble_L2  -0.992000 root_mean_squared_error       0.282142 163.637614                0.001760           0.049956            2       True         10
+      ExtraTreesMSE  -1.002709 root_mean_squared_error       0.208423   7.022562                0.208423           7.022562            1       True          5
+           CatBoost  -1.007172 root_mean_squared_error       0.004070   6.168863                0.004070           6.168863            1       True          4
+         LightGBMXT  -1.035817 root_mean_squared_error       0.022336   6.793427                0.022336           6.793427            1       True          1
+      LightGBMLarge  -1.077148 root_mean_squared_error       0.004344   7.169275                0.004344           7.169275            1       True          9
+           LightGBM  -1.094944 root_mean_squared_error       0.013375   2.324859                0.013375           2.324859            1       True          2
+    RandomForestMSE  -1.108462 root_mean_squared_error       0.207482   2.374466                0.207482           2.374466            1       True          3
+     NeuralNetTorch  -1.112977 root_mean_squared_error       0.045554 143.602807                0.045554         143.602807            1       True          8
+    NeuralNetFastAI  -1.143660 root_mean_squared_error       0.021233   4.601533                0.021233           4.601533            1       True          6
+            XGBoost  -1.189797 root_mean_squared_error       0.011973   2.744355                0.011973           2.744355            1       True          7
+
+--- Test-Set Evaluation Metrics ---
+  root_mean_squared_error       : -0.8692
+  mean_squared_error            : -0.7555
+  mean_absolute_error           : -0.6417
+  r2                            : 0.2026
+  pearsonr                      : 0.4728
+  median_absolute_error         : -0.4949
+
+--- Feature Importance (permutation-based) ---
+                       importance    stddev   p_value  n  p99_high   p99_low
+Temperature              0.067418  0.014852  0.000265  5  0.097998  0.036837
+Solar_Radiation          0.061201  0.024184  0.002403  5  0.110995  0.011407
+Total_River_Discharge    0.048725  0.012509  0.000478  5  0.074481  0.022969
+Phosphate                0.046595  0.015443  0.001258  5  0.078392  0.014799
+Salinity                 0.035008  0.012824  0.001822  5  0.061413  0.008604
+Dissolved_Oxygen         0.027011  0.006822  0.000449  5  0.041058  0.012963
+Silicate                 0.023409  0.016283  0.016221  5  0.056936 -0.010117
+Nitrate                  0.014923  0.008771  0.009515  5  0.032983 -0.003136
+Rainfall                -0.018572  0.008938  0.995155  5 -0.000168 -0.036975
+
+--- Interpretation ---
+AutoGluon trained an ensemble of models and automatically
+selected the best configuration. Evaluation metrics above
+reflect out-of-sample (test set) performance. Feature
+importances are computed via permutation on the test set;
+higher values indicate greater predictive relevance.
+
+Deployment model saved to: ../autogluon_models/final_model_for_deployment
+============================================================
