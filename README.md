@@ -1,6 +1,6 @@
 # Supplementary Materials for "Towards Statistical Modeling of Chlorophyll-a Concentrations in Balikpapan Bay, Indonesia: Implications for Algal Bloom Detection"
 
-[![DOI](https://img.shields.io/badge/DOI-10.1088%2F2515--7620%2Fae4680-blue)](https://doi.org/10.1088/2515-7620/ae4680)
+[![DOI](https://zenodo.org/badge/878714186.svg)](https://doi.org/10.5281/zenodo.18719868)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![No Maintenance Intended](https://unmaintained.tech/badge.svg)](https://unmaintained.tech/)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
